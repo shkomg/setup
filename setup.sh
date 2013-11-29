@@ -46,3 +46,7 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+cd $HOME
+
+sudo apt-get install npm
+npm install -g meteorite
