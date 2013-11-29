@@ -49,4 +49,6 @@ ln -sf dotfiles/.emacs.d .
 cd $HOME
 
 sudo apt-get install npm
+sudo apt-get install screen
+
 npm install -g meteorite
