@@ -6,13 +6,20 @@
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
 sudo apt-get install -y curl
+
+sudo apt-get update
+sudo apt-get install -y python-software-properties python g++ make
+sudo add-apt-repository -y ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install -y nodejs
+
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.10.22
-nvm use v0.10.22
-nvm alias default v0.10.22
+nvm install v0.10.25
+nvm use v0.10.25
+nvm alias default v0.10.25
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
@@ -52,4 +59,4 @@ cd $HOME
 sudo apt-get install npm
 sudo apt-get install screen
 
-npm install -g meteorite
+sudo npm install -g meteorite
