@@ -79,3 +79,13 @@ sudo npm install forever -g
 
 #meteorite to add packages from atmosphere
 sudo npm install meteorite -g
+
+#phantomjs
+
+cd /usr/local/share
+sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
+sudo tar xjf phantomjs-1.9.7-linux-x86_64.tar.bz2
+sudo ln -s /usr/local/share/phantomjs-1.9.0-linux-x8664/bin/phantomjs /usr/local/share/phantomjs; sudo ln -s /usr/local/share/phantomjs-1.9.0-linux-x8664/bin/phantomjs /usr/local/bin/phantomjs; sudo ln -s /usr/local/share/phantomjs-1.9.0-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
+phantomjs --versionsudo wget
+
+cd $HOME
