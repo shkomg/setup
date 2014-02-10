@@ -56,7 +56,26 @@ ln -sf dotfiles/.emacs.d .
 
 cd $HOME
 
+#Midnight Commander
+sudo apt-get install mc
+
+#Node package manager
 sudo apt-get install npm
+
+#screen to have multiple screen environment
 sudo apt-get install screen
 
-sudo npm install -g meteorite
+#mondoDB
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+sudo apt-get update
+sudo apt-get install mongodb-10gen
+
+#meteorjs
+curl https://install.meteor.com | /bin/sh
+
+#forever to keep meteor app running
+sudo npm install forever -g
+
+#meteorite to add packages from atmosphere
+sudo npm install meteorite -g
