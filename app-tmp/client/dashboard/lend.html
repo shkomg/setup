@@ -1,0 +1,18 @@
+<template name="lend">
+{{> header}}		
+{{#if currentUser}}
+				<!-- Inner Page Heading -->
+				<div class="inner-page contact">
+					<div class="container">
+						<h2><i class="fa fa-money lblue"></i><strong> {{t "Lend"}}</strong> {{t "use this panel to lend funds..."}}</h2>
+						<div class="row">
+<p> Lend dashboard</p>
+						</div>
+					</div>
+				</div>
+{{else}}
+  {{> haveToRegister}}
+{{/if}}	
+				
+{{> footer}}
+</template>

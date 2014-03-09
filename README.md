@@ -10,3 +10,13 @@ sudo apt-get install -y git-core
 git clone https://github.com/bitfundit/setup.git
 ./setup/setup.sh   
 ```
+To create new Meteor JS app do previous + next:
+
+```sh
+cd $HOME
+./setup/newapp.sh appname
+cd appname
+meteor
+```
+
+check if app is working at http://localhost:3000

@@ -1,0 +1,49 @@
+<template name="home">
+
+{{> header}}
+
+		<!-- Revolution Slider Start -->
+		<!-- Full width Banner container -->
+		<div class="banner-container">
+			<div class="banner">
+				<ul>
+					
+				<!-- THE fade EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
+				<!-- third slide for banner container -->
+					<li data-transition="slotzoom-vertical" data-slotamount="1">
+						<img src="/img/slider/3.jpg" alt="" />
+						
+						<!-- Slider Left Side Image -->
+						<div class="caption sfb caption-img" data-x="0" data-y="120" data-speed="500" data-start="1100" data-easing="easeOutSine">
+							<img src="/img/bitcoin-logo-3d.png" class="img-responsive" alt="" width="450"/>
+						</div> 
+						
+						<!-- Slider main heading -->
+						<div class="caption sfb slidetwo-h" data-x="500" data-y="150" data-speed="500" data-start="1100" data-easing="easeOutSine">
+							<h2>{{t "BTC P2P PAWNSHOP"}}</h2>
+						</div>
+						
+						<!-- Paragraph for Slider -->
+						<div class="caption lfr slidetwo-p"  data-x="500" data-y="250" data-speed="300" data-start="1700" data-easing="easeOutSine"><strong>
+							<p>{{t "Bitcoin peer-to-peer pawn shop - instant cash for your bitcoins!</br>
+							Fully automated instant process of providing and obtaining loans</br> 
+							on pawned bitcoins.</br>
+							Low loan rates let you get money out of BTC and still keep the coins.</br>
+							CoinBase & PayPal API used for the purpose of this service."}}</p></strong>
+						</div>
+						
+						<!-- Caption Buttons -->
+						<div class="caption sfb slidetwo-cbtn" data-x="500" data-y="400" data-speed="500" data-start="3000" data-easing="easeOutSine">
+							<a href="/dashboard/borrow/" class="caption-button br-green"><i class="fa fa-money"></i> {{t "BORROW"}}</a>
+							<a href="/dashboard/lend/" class="caption-button br-lblue"><i class="fa fa-money"></i> {{t "LEND"}}</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		
+		<!-- Revolution Slider End -->
+
+{{> footer}}
+</template>

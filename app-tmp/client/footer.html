@@ -1,0 +1,41 @@
+<template name="footer">
+                <!-- Scroll to top -->
+                <span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span>
+                <!-- Footer Start -->
+
+                <div class="footer">
+                        <div class="footer-inner">
+                                <div class="container">
+                                        <div class="clearfix"></div>
+                                        <div class="row">
+                                                <div class="col-md-3 col-sm-3">
+                                                        <div class="footer-widget">
+                                                                <h4><i class="fa fa-list"></i> &nbsp; {{t "Menu"}}</h4>
+                                                                <ul>
+                                                                        <li><a href="/"><i class="fa fa-home"></i> &nbsp; {{t "Home"}}</a></li>
+                                                                        <li><a href="/how-it-works/"><i class="fa fa-question"></i> &nbsp; {{t "How it works"}}</a></li>
+                                                                        <li><a href="/dashboard/borrow"><i class="fa fa-money"></i> &nbsp; {{t "Borrow"}}</a></li>
+                                                                        <li><a href="/dashboard/lend"><i class="fa fa-money"></i> &nbsp; {{t "Lend"}}</a></li>
+{{#if currentUser}} <li><a href="/dashboard"><i class="fa fa-dashboard"></i> &nbsp; {{t "Dashboard"}}</a></li> {{/if}}
+                                                                        <li><a href="/contact"><i class="fa fa-envelope"></i> &nbsp; {{t "Contact Us"}}</a></li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                        <div class="footer-widget">
+                                                                <h4><i class="fa fa-building"></i> &nbsp; {{t "About Us"}}</h4>
+                                                                <p>{{t "Bitcoin peer-to-peer pawn shop - instant cash for your bitcoins!"}}</p>
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                        <div class="copy">
+                                          <p>&copy; {{currentYear}} FundIM.com</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <!-- Footer End -->
+		<div id="jsToLoad"></div>
+</template>

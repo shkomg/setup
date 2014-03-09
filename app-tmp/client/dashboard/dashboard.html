@@ -1,0 +1,41 @@
+<template name="dashboard">
+{{> header}}
+	{{#if currentUser}}
+	<!-- Inner Page Heading -->
+	<div class="inner-page contact">
+		<div class="container">
+			<h2><i class="fa fa-dashboard lblue"></i><strong>{{t "Dashboard"}}</strong> {{t "all the main staff in one place..."}}</h2>
+				{{> dashboardMenu}}
+				</br>
+				{{> dashboardPanel}}
+		</div>
+	</div>
+	{{else}}
+	  {{> haveToRegister}}
+	{{/if}}
+
+{{> footer}}
+</template>
+
+<template name="dashboardMenu">
+{{#if currentUser}}
+	<div class="row">
+		{{#if checkRole "admin"}}
+			<a class="btn btn-danger" href="/dashboard/admin" role="button"><i class="fa fa-cogs"></i> Admin panel</a>
+		{{/if}}
+<p> dashboard menu buttons</p>
+	</div>
+</br>
+{{else}}
+{{/if}}
+</template>
+
+<template name="dashboardPanel">
+{{#if currentUser}}
+	<div class="row">
+<p> dashboard panel Text</p>
+	</div>
+</br>
+{{else}}
+{{/if}}
+</template>

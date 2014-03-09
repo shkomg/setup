@@ -1,0 +1,23 @@
+<template name="adminPanel">
+{{> header}}	
+{{#if currentUser}}
+	{{#if checkRole "admin"}}
+				<!-- Inner Page Heading -->
+				<div class="inner-page contact">
+					<div class="container">
+						<h2><i class="fa fa-cogs lblue"></i><strong> {{t "Admin Panel"}}</strong> {{t "you may change all the system here..."}}</h2>
+						<div class="row">
+<p> Text about everything</p>
+						</div>
+					</div>
+				</div>
+	{{else}}
+	  {{gotohome}}
+	{{/if}}	
+{{else}}
+  {{> haveToRegister}}
+{{/if}}	
+		
+				
+{{> footer}}
+</template>
