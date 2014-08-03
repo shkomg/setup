@@ -14,13 +14,13 @@ sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install -y nodejs
 
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+curl https://raw.githubusercontent.com/creationix/nvm/v0.13.0/install.sh | bash
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.10.26
-nvm use v0.10.26
-nvm alias default v0.10.26
+nvm install v0.10.30
+nvm use v0.10.30
+nvm alias default v0.10.30
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
