@@ -7,7 +7,7 @@ follows:
 ```sh
 cd $HOME
 sudo apt-get install -y git-core
-git clone https://github.com/bitfundit/setup.git
+git clone https://github.com/shkomg/setup.git
 ./setup/setup.sh   
 ```
 or for local setup (no phantom js and chromium added)
