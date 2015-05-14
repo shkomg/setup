@@ -79,7 +79,7 @@ curl https://install.meteor.com | /bin/sh
 sudo npm install forever -g
 
 #meteorite to add packages from atmosphere
-sudo npm install meteorite -g
+#sudo npm install meteorite -g
 
 #phantomjs
 
