@@ -38,7 +38,7 @@ sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+#wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # git pull and install dotfiles as well
 cd $HOME
@@ -79,9 +79,9 @@ curl https://install.meteor.com | /bin/sh
 sudo npm install forever -g
 
 #meteorite to add packages from atmosphere
-sudo npm install meteorite -g
+#sudo npm install meteorite -g
 
 #install chromium
-sudo apt-get install chromium-browser
+#sudo apt-get install chromium-browser
 
 cd $HOME
