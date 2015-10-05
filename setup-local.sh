@@ -18,17 +18,17 @@ curl https://raw.githubusercontent.com/creationix/nvm/v0.13.0/install.sh | bash
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
-nvm install v0.10.30
-nvm use v0.10.30
-nvm alias default v0.10.30
+nvm install v0.10.36
+nvm use v0.10.36
+nvm alias default v0.10.36
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
-npm install -g jshint
+#npm install -g jshint
 
 # Install rlwrap to provide libreadline features with node
 # See: http://nodejs.org/api/repl.html#repl_repl
-sudo apt-get install -y rlwrap
+#sudo apt-get install -y rlwrap
 
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
@@ -75,8 +75,11 @@ sudo apt-get install mongodb-10gen
 #meteorjs
 curl https://install.meteor.com | /bin/sh
 
+#meteor up - to deploy meteor projects
+npm install -g mup
+
 #forever to keep meteor app running
-sudo npm install forever -g
+#sudo npm install forever -g
 
 #meteorite to add packages from atmosphere
 #sudo npm install meteorite -g
